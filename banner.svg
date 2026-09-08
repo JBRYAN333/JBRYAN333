@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="The Ashen Dev">
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="115%" r="85%">
+      <stop offset="0%" stop-color="#3a1c05"/>
+      <stop offset="45%" stop-color="#140a02"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <radialGradient id="flameGlow" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#ff9800" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#e53935" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffc94d" stop-opacity="0.15"/>
+      <stop offset="45%" stop-color="#fff7dc" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#fff7dc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffc94d" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="fireline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e53935"/>
+      <stop offset="35%" stop-color="#ff9800"/>
+      <stop offset="70%" stop-color="#ffc94d"/>
+      <stop offset="100%" stop-color="#e53935"/>
+    </linearGradient>
+    <clipPath id="titleClip">
+      <text x="450" y="120" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="6">THE ASHEN DEV</text>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="240" rx="8" fill="url(#vignette)"/>
+
+  <g>
+    <ellipse cx="450" cy="238" rx="330" ry="150" fill="url(#flameGlow)">
+      <animate attributeName="opacity" values="0.5;1;0.7;0.9;0.55;0.95;0.5;0.75;0.5" dur="5.4s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <g>
+    <circle cx="90"  cy="40"  r="1.2" fill="#ffc94d"><animate attributeName="cy" values="300;-10" dur="5s"   begin="0.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="5s"   begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="190" cy="40"  r="2.0" fill="#ff9800"><animate attributeName="cy" values="320;-10" dur="7s"   begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" dur="7s"   begin="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="265" cy="40"  r="1.1" fill="#e53935"><animate attributeName="cy" values="340;-10" dur="4.6s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="4.6s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="40"  r="1.6" fill="#ffc94d"><animate attributeName="cy" values="310;-10" dur="6.2s" begin="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="6.2s" begin="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="430" cy="40"  r="1.0" fill="#fff2c9"><animate attributeName="cy" values="290;-10" dur="5.8s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="5.8s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="495" cy="40"  r="1.5" fill="#ff9800"><animate attributeName="cy" values="330;-10" dur="4.9s" begin="3.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" dur="4.9s" begin="3.7s" repeatCount="indefinite"/></circle>
+    <circle cx="575" cy="40"  r="2.1" fill="#e53935"><animate attributeName="cy" values="300;-10" dur="6.8s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="6.8s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="660" cy="40"  r="1.2" fill="#ffc94d"><animate attributeName="cy" values="315;-10" dur="5.2s" begin="4.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="5.2s" begin="4.4s" repeatCount="indefinite"/></circle>
+    <circle cx="735" cy="40"  r="1.8" fill="#ff9800"><animate attributeName="cy" values="325;-10" dur="6.5s" begin="2.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" dur="6.5s" begin="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="815" cy="40"  r="1.3" fill="#fff2c9"><animate attributeName="cy" values="295;-10" dur="5.5s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="5.5s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="130" cy="40"  r="1.0" fill="#e53935"><animate attributeName="cy" values="335;-10" dur="6.0s" begin="5.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="6.0s" begin="5.1s" repeatCount="indefinite"/></circle>
+    <circle cx="540" cy="40"  r="1.4" fill="#ffc94d"><animate attributeName="cy" values="305;-10" dur="4.4s" begin="3.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="4.4s" begin="3.0s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g>
+    <text x="450" y="120" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="6" fill="#ffc94d">THE ASHEN DEV</text>
+    <g clip-path="url(#titleClip)">
+      <rect x="0" y="0" width="260" height="180" fill="url(#shimmer)">
+        <animateTransform attributeName="transform" type="translate" values="-260,0;900,0" dur="4.6s" begin="0.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <g font-family="'Space Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace" font-size="21" letter-spacing="3" text-anchor="middle">
+    <text x="450" y="158" fill="#b8a57e">
+      <animate attributeName="opacity" values="0.45;1;0.45" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+      PREPARES TO DEPLOY &gt; &gt; &gt;
+    </text>
+  </g>
+
+  <g stroke="url(#fireline)" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <path d="M 60 202 C 190 190 290 214 430 204 C 570 194 690 212 840 200">
+      <animate attributeName="stroke-dashoffset" values="0;160" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 60 202 C 190 190 290 214 430 204 C 570 194 690 212 840 200" stroke-dasharray="60 220" opacity="0.55">
+      <animate attributeName="stroke-dashoffset" values="0;-1120" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g>
+    <animate attributeName="opacity" values="0.25;0.85;0.25" dur="5.8s" repeatCount="indefinite"/>
+    <polyline points="44,52 24,52 24,24" fill="none" stroke="#ffc94d" stroke-width="2"/>
+    <polyline points="856,52 876,52 876,24" fill="none" stroke="#ffc94d" stroke-width="2"/>
+    <polyline points="44,188 24,188 24,216" fill="none" stroke="#ffc94d" stroke-width="2"/>
+    <polyline points="856,188 876,188 876,216" fill="none" stroke="#ffc94d" stroke-width="2"/>
+  </g>
+
+  <rect width="900" height="240" rx="8" fill="none" stroke="#3a2a10" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.5;1;0.6;1;0.5" dur="6.6s" repeatCount="indefinite"/>
+  </rect>
+</svg>

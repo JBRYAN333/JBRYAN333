@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=4,6,9,18&height=130&section=header&text=THE%20ASHEN%20DEV&fontSize=38&fontAlignY=28&desc=prepares%20to%20deploy%20...&descAlignY=58" alt="header"/>
+  <img src="banner.svg" alt="The Ashen Dev — animated banner" width="100%" />
 </p>
+
+> Rendering as a black card in light mode; **dark mode recommended**. ⚠️ GitHub code blocks don't run JS — the fire, embers and shimmer are pure SVG *SMIL* animations, so they play natively.
 
 ```text
       /\

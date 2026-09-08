@@ -29,8 +29,8 @@
 |---|---|
 | ⚔️ **CLASS** | Automation Knight (bots · agents · Android · dashboards) |
 | ⛳ **PLAYTHROUGH** | Started 14/10/2025 · NG+ unlocked |
-| 🕯️ **SOUL LEVEL** | `16` (public repos) |
-| 🔥 **SOULS COLLECTED** | `0 *` (*every bonfire starts cold) |
+| 🕯️ **SOUL LEVEL** | `17` (public repos) |
+| 🔥 **SOULS COLLECTED** | `11` ⭐ (gathered across the land) |
 | 🌙 **ESTUS FLASKS** | `1` (rare, precious follower) |
 
 ---
@@ -83,10 +83,15 @@
 
 ## 📊 SOUL COUNTER
 
+> Self-hosted stats card — no external timers, survives any service outage.
+
+<p align="center">
+  <img src="soul-counter.svg" alt="Soul counter" width="90%" />
+</p>
+
 | | |
 |---|---|
-| ![stats](https://github-readme-stats.vercel.app/api?username=JBRYAN333&show_icons=true&theme=dark&title_color=FFC94D&icon_color=FFC94D&text_color=E8E6E3&bg_color=0D0D0D&hide_border=true) | ![top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JBRYAN333&layout=compact&theme=dark&title_color=FFC94D&text_color=E8E6E3&bg_color=0D0D0D&hide_border=true) |
-| ![streak](https://github-readme-streak-stats.herokuapp.com?user=JBRYAN333&theme=dark&hide_border=true&background=0D0D0D&stroke=FFC94D&ring=FFC94D&fire=E53935) | ![visits](https://komarev.com/ghpvc/?username=JBRYAN333&style=for-the-badge&color=FFC94D&label=Eyes+upon+you) |
+| ![streak](https://github-readme-streak-stats.herokuapp.com?user=JBRYAN333&theme=dark&hide_border=true&background=0D0D0D&stroke=FFC94D&ring=FFC94D&fire=E53935) | — |
 
 ---
 

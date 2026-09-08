@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="132" viewBox="0 0 720 132" role="img" aria-label="Soul counter stats">
+  <defs>
+    <linearGradient id="sShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffc94d" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#fff7dc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffc94d" stop-opacity="0.12"/>
+    </linearGradient>
+    <clipPath id="valClip">
+      <text x="90"  y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">17</text>
+      <text x="270" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="23" font-weight="700" text-anchor="middle">Py · JS · HTML</text>
+      <text x="450" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">1</text>
+      <text x="630" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">11 ★</text>
+    </clipPath>
+  </defs>
+
+  <rect width="720" height="132" rx="8" fill="#0f0f0f"/>
+
+  <g font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="14" letter-spacing="2" text-anchor="middle" fill="#8a7a55">
+    <text x="90"  y="34">SOUL LEVEL</text>
+    <text x="270" y="34">PYROMANCY</text>
+    <text x="450" y="34">KINDRED</text>
+    <text x="630" y="34">SOULS EARNED</text>
+  </g>
+
+  <g>
+    <text x="90"  y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">17</text>
+    <text x="270" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="23" font-weight="700" text-anchor="middle" fill="#ffc94d">Py · JS · HTML</text>
+    <text x="450" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">1</text>
+    <text x="630" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">11 ★</text>
+  </g>
+
+  <g>
+    <rect x="0" y="0" width="520" height="132" fill="url(#sShimmer)">
+      <animateTransform attributeName="transform" type="translate" values="-520,0;720,0" dur="4.8s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="12" letter-spacing="1" text-anchor="middle" fill="#5c5240">
+    <text x="90"  y="108">public repos</text>
+    <text x="270" y="108">tongues spoken</text>
+    <text x="450" y="108">follower</text>
+    <text x="630" y="108">across the land</text>
+  </g>
+
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="180" y1="26" x2="180" y2="106"/>
+    <line x1="360" y1="26" x2="360" y2="106"/>
+    <line x1="540" y1="26" x2="540" y2="106"/>
+  </g>
+
+  <rect width="720" height="132" rx="8" fill="none" stroke="#3a2a10" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.5;1;0.6;1;0.5" dur="6.6s" repeatCount="indefinite"/>
+  </rect>
+</svg>

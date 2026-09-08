@@ -95,10 +95,24 @@ The repos that keep AI **alive in the cloud**, 24/7, without a single local mach
 
 ## 📊 SOUL COUNTER
 
-> Self-hosted stats card — no external timers, survives any service outage.
+> Self-hosted stats card, **reforged nightly by its own ghosts** — a GH Actions workflow
+> recomputes and re-renders the numbers from the API at dawn. No external services, no stale stats.
 
 <p align="center">
   <img src="soul-counter.svg" alt="Soul counter" width="90%" />
+</p>
+
+## 🐍 LINK THE FLAME
+
+> The First Flame must be fed. A serpente de madeira (contribution snake) is reproduced at every
+> dawn by Actions — watch it devour the graph of contributions.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="output/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="output/snake-light.svg">
+    <img alt="contribution snake — the First Flame must be fed" src="output/snake-dark.svg" width="100%" />
+  </picture>
 </p>
 
 | | |

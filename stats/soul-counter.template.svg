@@ -6,10 +6,10 @@
       <stop offset="100%" stop-color="#ffc94d" stop-opacity="0.12"/>
     </linearGradient>
     <clipPath id="valClip">
-      <text x="90"  y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">17</text>
-      <text x="270" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="23" font-weight="700" text-anchor="middle">HTML · Py · JS</text>
-      <text x="450" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">1</text>
-      <text x="630" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">12 ★</text>
+      <text x="90"  y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">{{REPOS}}</text>
+      <text x="270" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="23" font-weight="700" text-anchor="middle">{{LANGS}}</text>
+      <text x="450" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">{{FOLLOWERS}}</text>
+      <text x="630" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle">{{SOULS}} ★</text>
     </clipPath>
   </defs>
 
@@ -23,10 +23,10 @@
   </g>
 
   <g>
-    <text x="90"  y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">17</text>
-    <text x="270" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="23" font-weight="700" text-anchor="middle" fill="#ffc94d">HTML · Py · JS</text>
-    <text x="450" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">1</text>
-    <text x="630" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">12 ★</text>
+    <text x="90"  y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">{{REPOS}}</text>
+    <text x="270" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="23" font-weight="700" text-anchor="middle" fill="#ffc94d">{{LANGS}}</text>
+    <text x="450" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">{{FOLLOWERS}}</text>
+    <text x="630" y="84" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Consolas,monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#ffc94d">{{SOULS}} ★</text>
   </g>
 
   <g>

@@ -1,0 +1,29 @@
+name: forge snake
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: JBRYAN333
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            dist/snake-light.svg?palette=github-light
+            dist/snake-dark.svg?palette=github-dark
+      - name: stage snake
+        run: |
+          mkdir -p output
+          cp dist/snake-light.svg output/snake-light.svg
+          cp dist/snake-dark.svg output/snake-dark.svg
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'forge: regenerate contribution snake'
+          file_pattern: 'output/*.svg'

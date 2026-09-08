@@ -1,0 +1,19 @@
+name: soul counter
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  forge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: refresh soul counter
+        run: node scripts/gen-soul-counter.mjs
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'forge: refresh soul counter'
+          file_pattern: 'soul-counter.svg'

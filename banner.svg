@@ -10,6 +10,16 @@
       <stop offset="45%" stop-color="#e53935" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="smokePuff" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9a3d" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff9a3d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="foil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"><animate attributeName="stop-color" values="#e53935;#ffc94d;#fff7dc;#ff9800;#e53935" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="35%"><animate attributeName="stop-color" values="#ff9800;#fff7dc;#ffc94d;#ff6a00;#ff9800" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="75%"><animate attributeName="stop-color" values="#ffc94d;#ff8a1e;#e53935;#fff7dc;#ffc94d" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="100%"><animate attributeName="stop-color" values="#fff7dc;#ff6a00;#ffc94d;#e53935;#fff7dc" dur="10s" repeatCount="indefinite"/></stop>
+    </linearGradient>
     <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffc94d" stop-opacity="0.15"/>
       <stop offset="45%" stop-color="#fff7dc" stop-opacity="1"/>
@@ -22,6 +32,29 @@
       <stop offset="70%" stop-color="#ffc94d"/>
       <stop offset="100%" stop-color="#e53935"/>
     </linearGradient>
+    <linearGradient id="flameFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff2c9"/>
+      <stop offset="45%" stop-color="#ff9800"/>
+      <stop offset="100%" stop-color="#b3271d"/>
+    </linearGradient>
+    <filter id="emberGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="smokeWarp" x="-60%" y="-60%" width="220%" height="220%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.014" numOctaves="3" seed="4" result="noise">
+        <animate attributeName="seed" values="4;84" dur="46s" repeatCount="indefinite"/>
+        <animate attributeName="baseFrequency" values="0.006 0.014;0.016 0.03;0.006 0.014" dur="20s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="70" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="smokeWarp2" x="-60%" y="-60%" width="220%" height="220%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.01" numOctaves="3" seed="22" result="noise">
+        <animate attributeName="seed" values="22;102" dur="60s" repeatCount="indefinite"/>
+        <animate attributeName="baseFrequency" values="0.004 0.01;0.01 0.022;0.004 0.01" dur="26s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="95" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
     <clipPath id="titleClip">
       <text x="450" y="120" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="6">THE ASHEN DEV</text>
     </clipPath>
@@ -30,8 +63,43 @@
   <rect width="900" height="240" rx="8" fill="url(#vignette)"/>
 
   <g>
-    <ellipse cx="450" cy="238" rx="330" ry="150" fill="url(#flameGlow)">
+    <ellipse cx="450" cy="238" rx="340" ry="160" fill="url(#flameGlow)">
       <animate attributeName="opacity" values="0.5;1;0.7;0.9;0.55;0.95;0.5;0.75;0.5" dur="5.4s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <g filter="url(#smokeWarp2)" opacity="0.55">
+    <ellipse cx="450" cy="252" rx="300" ry="66" fill="none" stroke="url(#flameFill)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M 120 250 C 150 205 180 200 205 250" fill="none" stroke="url(#flameFill)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M 320 250 C 350 200 378 195 410 250" fill="none" stroke="url(#flameFill)" stroke-width="28" stroke-linecap="round"/>
+    <path d="M 505 250 C 540 205 570 198 605 250" fill="none" stroke="url(#flameFill)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M 700 250 C 732 208 758 200 790 250" fill="none" stroke="url(#flameFill)" stroke-width="22" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#smokeWarp)" opacity="0.9">
+    <path d="M 250 250 C 270 215 285 205 300 250" fill="none" stroke="#ffb347" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 420 250 C 445 205 465 198 490 250" fill="none" stroke="#ff8a1e" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 600 250 C 620 214 638 206 655 250" fill="none" stroke="#ffb347" stroke-width="11" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#smokeWarp)" opacity="0.9">
+    <path d="M 300 250 C 312 222 320 215 328 250" fill="none" stroke="#fff2c9" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 468 250 C 482 214 496 208 506 250" fill="none" stroke="#fff2c9" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 622 250 C 636 220 646 214 656 250" fill="none" stroke="#fff2c9" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#smokeWarp)" opacity="0.5">
+    <ellipse cx="300" cy="150" rx="70" ry="30" fill="url(#smokePuff)">
+      <animate attributeName="cy" values="185;95" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.55;0" dur="7s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="470" cy="130" rx="90" ry="36" fill="url(#smokePuff)">
+      <animate attributeName="cy" values="190;70" dur="9s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="9s" begin="1.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="640" cy="150" rx="65" ry="26" fill="url(#smokePuff)">
+      <animate attributeName="cy" values="182;100" dur="8s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="8s" begin="0.7s" repeatCount="indefinite"/>
     </ellipse>
   </g>
 
@@ -50,11 +118,19 @@
     <circle cx="540" cy="40"  r="1.4" fill="#ffc94d"><animate attributeName="cy" values="305;-10" dur="4.4s" begin="3.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="4.4s" begin="3.0s" repeatCount="indefinite"/></circle>
   </g>
 
+  <g filter="url(#emberGlow)">
+    <text x="450" y="120" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="6" fill="#ff6a00" opacity="0.5">
+      <animate attributeName="opacity" values="0.28;0.6;0.36;0.55;0.28" dur="6s" repeatCount="indefinite"/>
+      THE ASHEN DEV
+    </text>
+  </g>
+
   <g>
-    <text x="450" y="120" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="6" fill="#ffc94d">THE ASHEN DEV</text>
+    <text x="450" y="120" font-family="'Space Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace" font-size="58" font-weight="700" text-anchor="middle" letter-spacing="6" fill="#5b3413" stroke="#ffc94d" stroke-width="0.6">THE ASHEN DEV</text>
     <g clip-path="url(#titleClip)">
-      <rect x="0" y="0" width="260" height="180" fill="url(#shimmer)">
-        <animateTransform attributeName="transform" type="translate" values="-260,0;900,0" dur="4.6s" begin="0.6s" repeatCount="indefinite"/>
+      <rect x="0" y="0" width="900" height="170" fill="url(#foil)"/>
+      <rect x="0" y="0" width="240" height="170" fill="url(#shimmer)">
+        <animateTransform attributeName="transform" type="translate" values="-240,0;920,0" dur="3.2s" begin="1s" repeatCount="indefinite"/>
       </rect>
     </g>
   </g>
